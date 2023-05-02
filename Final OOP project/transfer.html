@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<head>
+    <title>Transfer</title>
+    <link rel="stylesheet" href="transfer.css">
+</head>
+<body>
+    <h1>OOP Banking</h1>
+    <label for="input-account">Transfer to account:</label>
+    <input type="text" id="input-account" name="input_account">
+    <button id="submit-button">Submit</button>
+    <p id="output1"></p>
+    <table>
+        <tr>
+            <td style="width: 50%;">
+                <p id="displaymy1"></p>
+                <p id="displaymy2"></p>
+                <p id="displaymy3"></p>
+            </td>
+            <td style="width: 50%;">
+                <p id="displayyou1">Name    : -</p>
+                <p id="displayyou2">Account : -</p>
+                <p id="displayyou3">Balance : -</p>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <label for="input-amount">Transfer amount:</label>
+                <input type="text" id="input-amount" name="input_amount">
+                <button id="confirm-button">Confirm</button>
+                <p id="output2"></p>
+
+            </td>
+        </tr>
+    </table>
+
+    <div id="popup" style="display:none;">
+        <div id="popup-content">
+          <p class="transaction-text">Transaction complete</p>
+          <p id="countdown-timer"></p>
+        </div>
+    </div>
+    <script src="transfer.js"></script>
+</body>
+</html>
